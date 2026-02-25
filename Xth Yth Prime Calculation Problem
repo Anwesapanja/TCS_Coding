@@ -1,0 +1,19 @@
+def nthprime(n):
+    num=2
+    count=0
+    while True:
+        is_prime=True
+        for i in range(2,int(num**0.5)+1):
+            if(num%i==0):
+                is_prime=False
+                break
+        if(is_prime==True):
+            count+=1
+            if(count==n):
+                return num
+        num+=1
+xth=int(input())
+yth=int(input())
+A=nthprime(xth)
+B=nthprime(yth)
+print ((A*B)-1)
