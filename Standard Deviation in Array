@@ -1,0 +1,11 @@
+import math
+data=list(map(int,input().split()))
+n=data[0]
+lii=data[1:]
+a=(sum(lii)/n)
+arr=0
+for i in range(n):
+    arr+=(lii[i]-a)**2
+r1=math.sqrt((arr/n))
+print(f"{r1:.2f}")
+
