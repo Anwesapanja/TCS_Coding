@@ -1,0 +1,24 @@
+n,m=map(int,input().split())
+arr=[]
+for i in range(n):
+    matt=list(map(int,input().split()))
+    arr.append(matt)
+mat=[]
+for i in range(n):
+    t=[]
+    if(i%2!=0):
+        for j in range(m-1,-1,-1):
+            t.append(arr[i][j])
+    else:
+        for j in range(m):
+            t.append(arr[i][j])
+    mat.append(t)
+print(mat)
+----------------------------------------------------------------
+-------------------------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_4.py"
+3 3
+1 2 3
+4 5 6
+7 8 9
+[[1, 2, 3], [6, 5, 4], [7, 8, 9]]
