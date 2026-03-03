@@ -1,0 +1,22 @@
+s=input()
+key=int(input())
+if(key<=0):
+    print("Invaid")
+ans=''
+for i in s:
+    if(i.isalpha()):
+        if(i.isupper()):
+            ans+=chr(((ord(i)-ord('A')+key)%26)+ord('A'))
+        elif(i.islower()):
+            ans+=chr(((ord(i)-ord('a')+key)%26)+ord('a'))
+    elif(i.isdigit()):
+        ans+=chr(((ord(i)-ord('0')+key)%10)+ord('0'))
+    else:
+        ans+=i
+print(ans)
+---------------------------------------------------------------------------
+----------------------------------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\Ciper_Code_TCS.py"
+Itika23
+2
+Kvkmc45
