@@ -1,0 +1,27 @@
+li=list(map(int,input().split()))
+k=int(input())
+n=len(li)
+left_sum=0
+right_sum=0
+for i in range(0,k):
+    left_sum+=li[i]
+left=k-1
+right=n-1
+max_sum=left_sum+right_sum
+while(left>=0):
+    left_sum-=li[left]
+    right_sum+=li[right]
+    max_sum=max(max_sum,left_sum+right_sum)
+    left-=1
+    right-=1
+print(max_sum)
+---------------------------------------------------------------------
+--------------------------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_6.py"
+1 2 3 4 5
+3
+12
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_6.py"
+3 6 0 1 9 0
+4
+18
