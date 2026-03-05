@@ -1,0 +1,23 @@
+s=input()
+s1=''
+flag=0
+for i in s:
+    if(i.isdigit()):
+        flag=0
+        s1+=i
+    else:
+        flag=1    
+        s1+=i
+        break
+if(flag==1):
+    print(s1+s[len(s1):][::-1])
+else:
+    print(s1[::-1])
+-----------------------------------------------------------
+---------------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_7.py"
+-123
+-321
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_7.py"
+-1122345
+-5432211
