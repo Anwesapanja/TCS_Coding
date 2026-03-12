@@ -1,0 +1,40 @@
+lii=list(map(str,input().split()))
+li1=[]
+for i in lii:
+    a=len(i)
+    li1.append(a)
+d=min(li1)
+#print(d)
+li2=''
+for i in range(d):
+    a=lii[0][i]
+    for j in lii:
+        if(j[i]!=a):
+            print(li2)
+            exit()
+    li2+=a
+print(li2)
+-------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+flower flow flight
+fl
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+Anwesa Suvo Soham
+
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+kajal Kaju Kaa
+
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+kajal kaju kaa
+ka
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+car car car
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_12.py"
+car car car
+car
+
+
+
+
+
+
