@@ -1,0 +1,33 @@
+n=int(input())
+lii=list(map(int,input().split()))
+max_i=0
+flag=0
+for i in range(0,(n-1)):
+    max_i=0
+    for j in range(i,(n-1)):
+        max_i=j+lii[j]
+        if(max_i>=n-1):
+            print("True")
+            exit()
+        else:
+            flag=0
+if(flag==0):
+    print("False")
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_13.py"
+5 
+3 2 1 0 4
+False
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_13.py"
+5
+2 3 1 1 4
+True
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_13.py"
+5
+3 2 1 0 4
+False
+
+
+
+
