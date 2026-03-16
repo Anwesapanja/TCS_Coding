@@ -1,0 +1,29 @@
+a=len(s)
+n=(a//2)
+count1=0
+count2=0
+for i in range(0,n):
+    if s[i] in 'AEIOUaeiou':
+        count1+=1
+for i in range(n,a):
+    if s[i] in 'AEIOUaeiou':
+        count2+=1
+if(count1==count2):
+    print("True")
+else:
+    print("False")
+------------------------------------------------
+
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_14.py"
+Book
+True
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> 
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_14.py"
+Sinchan
+True
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_14.py"
+Anwesa
+False
+PS C:\Users\Anwesa Panja\OneDrive\Desktop\python> python -u "c:\Users\Anwesa Panja\OneDrive\Desktop\python\.vscode\NUMPY++\TCS_14.py"
+Soham
+True
